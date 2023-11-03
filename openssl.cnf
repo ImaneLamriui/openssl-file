@@ -246,8 +246,7 @@ authorityKeyIdentifier = keyid,issuer
 keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
 extendedKeyUsage = clientAuth, emailProtection
 
-[
-server_cert ]
+[ server_cert ]
 #Para certificados de servidores, por ejemplo web
 basicConstraints = CA:FALSE
 nsCertType = server
@@ -299,7 +298,7 @@ keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 # You can even override a supported extension:
 # basicConstraints= critical, DER:30:03:01:01:FF
 
-[ v3_ca_intermediate]
+[ v3_ca_intermediate ]
 #Para CA intermedias o subordinadas
 #Se aplica cuando creamos certificados intermedios, es parámetro pathlen:0 indica que no hay más entidades subordinadas detrás de la intermedia.
 subjectKeyIdentifier = hash
